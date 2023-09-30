@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bg.css">
+    <script src ="scrtp.js" defer></script>
+    <title>Hello world!!</title>
+</head>
+<body>
+    <div class="text" style="top: -50px;"></div>
+    <h1 id="Lyrics"></h1>
+    <a class="button1" href="reader.html" style="text-decoration: none; margin-top: 20px;">
+        Continue
+        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+            <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    </dev>
+    <audio id="music" controls="" autoplay="" style="display: none;" jm_neat="196220929">
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <div class="dear" id="dear-container">
+        <span style="--i: 3;"></span><span style="--i: 18;"></span><span style="--i: 11;"></span><span style="--i: 2;"></span><span style="--i: 5;"></span><span style="--i: 7;"></span><span style="--i: 5;"></span><span style="--i: 3;"></span><span style="--i: 17;"></span><span style="--i: 8;"></span><span style="--i: 7;"></span><span style="--i: 9;"></span><span style="--i: 17;"></span><span style="--i: 3;"></span><span style="--i: 8;"></span><span style="--i: 19;"></span><span style="--i: 7;"></span><span style="--i: 9;"></span><span style="--i: 1;"></span><span style="--i: 9;"></span><span style="--i: 13;"></span><span style="--i: 1;"></span><span style="--i: 20;"></span><span style="--i: 10;"></span><span style="--i: 8;"></span><span style="--i: 10;"></span><span style="--i: 4;"></span><span style="--i: 9;"></span><span style="--i: 8;"></span><span style="--i: 20;"></span><span style="--i: 15;"></span><span style="--i: 6;"></span><span style="--i: 9;"></span><span style="--i: 15;"></span><span style="--i: 11;"></span><span style="--i: 16;"></span><span style="--i: 20;"></span><span style="--i: 20;"></span><span style="--i: 4;"></span><span style="--i: 15;"></span><span style="--i: 17;"></span><span style="--i: 15;"></span><span style="--i: 20;"></span><span style="--i: 13;"></span><span style="--i: 18;"></span><span style="--i: 12;"></span><span style="--i: 11;"></span><span style="--i: 11;"></span><span style="--i: 4;"></span><span style="--i: 3;"></span><span style="--i: 12;"></span><span style="--i: 9;"></span><span style="--i: 7;"></span><span style="--i: 15;"></span><span style="--i: 1;"></span><span style="--i: 16;"></span><span style="--i: 16;"></span><span style="--i: 5;"></span><span style="--i: 3;"></span><span style="--i: 20;"></span></div>
+    </div>
+    <script>
+        function createRaindrops() {
+            const container = document.getElementById("dear-container");
+            const numRaindrops = 60; 
+            
+            for (let i = 0; i < numRaindrops; i++) {
+                const span = document.createElement("span");
+                span.style.setProperty("--i", Math.floor(Math.random() * 20) + 1); 
+                container.appendChild(span);
+            }
+        }
+        createRaindrops(); 
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <script src="scrtp.js" defer></script>
+    <script src="scrtp1.js" defer></script>
+    <title>Hello world!!</title>
+</head>,,
+<body>
+    <div class="card">
+        <div class="card2">
+          <form class="form">
+            <img src="img/des.jpg" alt="Profile Image" class="profile-image">
+             <p id="heading" style="font-weight: bold;">Are you made of copper and tellurium?😄😄
+             </p>
+            <div class="btn">
+                <a class='button1' href="ty.html" style='font-size: 1em; font-weight: bold;'>Yes</a>
+                <button class="button2" style="font-size: 1em; font-weight: bold;">No</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="dear" id="dear-container">
+        </div>
+    </div>
+    
+    <script>
+        function createRaindrops() {
+            const container = document.getElementById("dear-container");
+            const numRaindrops = 60; 
+            
+            for (let i = 0; i < numRaindrops; i++) {
+                const span = document.createElement("span");
+                span.style.setProperty("--i", Math.floor(Math.random() * 20) + 1); 
+                container.appendChild(span);
+            }
+        }
+        createRaindrops(); 
+    </script>
+    
+</body>
+</html>
